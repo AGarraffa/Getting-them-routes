@@ -4,8 +4,6 @@ const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
-// onDelete: 'CASCADE' see about when/where to use this
-
 // Product/Category relationship
 Product.belongsTo(Category, {
   foraeignKey: 'category_id'
